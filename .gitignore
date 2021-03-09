@@ -1,0 +1,20 @@
+# Ignore composer stuff
+/vendor/
+
+# Ignore concrete5 stuff
+/public/concrete
+/public/application/files
+/public/application/config/generated_overrides
+
+# Ignore composer packages
+/public/packages/*
+
+# Ignore developer stuff
+/.idea
+/node_modules
+/.env
+/public/mix-manifest.json
+/phpunit.xml
+/build
+/.phpunit.*
+.DS_Store

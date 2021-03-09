@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<concrete5-cif version="1.0">
+
+    <packages>
+        <package handle="concrete_cms_theme"/>
+        <package handle="community_translation"/>
+    </packages>
+
+</concrete5-cif>

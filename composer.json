@@ -1,0 +1,64 @@
+{
+  "name": "concrete5/translate.concretecms.com",
+  "description": "The translate.concretecms.com website.",
+  "type": "project",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "autoload": {
+    "psr-4": {
+      "Concrete5\\Translate\\": "src"
+    }
+  },
+  "require": {
+    "composer/installers": "^1.3",
+    "concrete5/community_translation": "^0.6.14",
+    "concrete5/core": "dev-develop",
+    "doctrine/persistence": "^1",
+    "mlocati/concrete5-translation-library": "^1.6.0",
+    "concrete5/dependency-patches": "^1.4.0",
+    "vlucas/phpdotenv": "^2.4",
+    "concrete5/concrete_cms_theme": "dev-master"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.0",
+    "mockery/mockery": "^1.2"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "extra": {
+    "allow-subpatches": [
+      "concrete5/dependency-patches"
+    ],
+    "branch-alias": {
+      "dev-8.x": "8.x-dev"
+    },
+    "installer-paths": {
+      "public/concrete": ["type:concrete5-core"],
+      "public/application/themes/{$name}": ["type:concrete5-theme"],
+      "public/packages/{$name}": ["type:concrete5-package"],
+      "public/application/blocks/{$name}": ["type:concrete5-block"]
+    }
+  },
+  "repositories": {
+    "portlandlabs": {
+      "type": "composer",
+      "url": "https://composer.portlandlabs.com"
+    },
+    "addon_markdown": {
+      "type": "package",
+      "package": {
+        "name": "aembler/addon_markdown",
+        "version": "1.0.0",
+        "source": {
+          "url": "https://bitbucket.org/aembler/addon_markdown.git",
+          "type": "git",
+          "reference": "master"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "phpunit"
+  }
+}
