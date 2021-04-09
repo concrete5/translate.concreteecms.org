@@ -11,7 +11,7 @@ $page = Page::getCurrentPage();
     <div class="container">
         <div class="row">
             <div class="col">
-                <a href="<?=$urlManager->getTranslateUrl()?>"><h3><?=t('Translate Concrete')?></h3></a>
+                <a href="<?=$urlManager->getTranslateUrl()?>"><h3><?=t('Translate')?></h3></a>
 
                 <nav>
                     <ul>
