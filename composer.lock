@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "bb12b0a61981ed64da808d911884c137",
+    "content-hash": "2ef39cd86f6af2dbca86979c7a7e7278",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -222,27 +222,27 @@
         },
         {
             "name": "commerceguys/addressing",
-            "version": "v1.1.1",
+            "version": "v1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/commerceguys/addressing.git",
-                "reference": "6df5c0eea9d1f370095585eef1b08f4dff73d51f"
+                "reference": "00c263fa945e7f78524bbb6b99d331f3b493be2a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/6df5c0eea9d1f370095585eef1b08f4dff73d51f",
-                "reference": "6df5c0eea9d1f370095585eef1b08f4dff73d51f",
+                "url": "https://api.github.com/repos/commerceguys/addressing/zipball/00c263fa945e7f78524bbb6b99d331f3b493be2a",
+                "reference": "00c263fa945e7f78524bbb6b99d331f3b493be2a",
                 "shasum": ""
             },
             "require": {
                 "doctrine/collections": "~1.0",
-                "php": ">=7.0.8"
+                "php": ">=7.1.3"
             },
             "require-dev": {
                 "mikey179/vfsstream": "1.*",
-                "phpunit/phpunit": "^6.0",
-                "squizlabs/php_codesniffer": "2.*",
-                "symfony/validator": "^3.4"
+                "phpunit/phpunit": "^7.5",
+                "squizlabs/php_codesniffer": "3.*",
+                "symfony/validator": "^4.4"
             },
             "suggest": {
                 "symfony/validator": "to validate addresses"
@@ -277,7 +277,7 @@
                 "localization",
                 "postal"
             ],
-            "time": "2020-12-05T18:16:35+00:00"
+            "time": "2021-03-14T20:04:10+00:00"
         },
         {
             "name": "composer/installers",
@@ -494,16 +494,16 @@
         },
         {
             "name": "concrete5/community_translation",
-            "version": "0.6.14",
+            "version": "2021.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/addon_community_translation.git",
-                "reference": "d4cce21965e0545aa06b18b851a4a451c5c24a7e"
+                "reference": "6783a68cb309a568ca518917213f077d127566d9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/d4cce21965e0545aa06b18b851a4a451c5c24a7e",
-                "reference": "d4cce21965e0545aa06b18b851a4a451c5c24a7e",
+                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/6783a68cb309a568ca518917213f077d127566d9",
+                "reference": "6783a68cb309a568ca518917213f077d127566d9",
                 "shasum": ""
             },
             "type": "concrete5-package",
@@ -513,7 +513,7 @@
             ],
             "description": "concrete5 translation package",
             "homepage": "https://github.com/concrete5/addon_community_translation",
-            "time": "2020-08-25T22:27:28+00:00"
+            "time": "2021-03-26T13:46:03+00:00"
         },
         {
             "name": "concrete5/concrete_cms_theme",
@@ -521,12 +521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "c67a513fdc3cff6c534751915ed021118a1e044e"
+                "reference": "1c4f2d0be5dd95aac82eb2abdb2958ebb949e5ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/c67a513fdc3cff6c534751915ed021118a1e044e",
-                "reference": "c67a513fdc3cff6c534751915ed021118a1e044e",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/1c4f2d0be5dd95aac82eb2abdb2958ebb949e5ca",
+                "reference": "1c4f2d0be5dd95aac82eb2abdb2958ebb949e5ca",
                 "shasum": ""
             },
             "type": "concrete5-package",
@@ -535,7 +535,7 @@
                 "MIT"
             ],
             "description": "Package that contains the official ConcreteCMS Theme.",
-            "time": "2021-03-09T14:42:31+00:00"
+            "time": "2021-03-30T21:33:11+00:00"
         },
         {
             "name": "concrete5/core",
@@ -543,12 +543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete5-core.git",
-                "reference": "19d0b79746af2d310936ec050b863fa29082c3a2"
+                "reference": "6b30d5ee1eda8255a6a3e271110e108522807dcb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/19d0b79746af2d310936ec050b863fa29082c3a2",
-                "reference": "19d0b79746af2d310936ec050b863fa29082c3a2",
+                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/6b30d5ee1eda8255a6a3e271110e108522807dcb",
+                "reference": "6b30d5ee1eda8255a6a3e271110e108522807dcb",
                 "shasum": ""
             },
             "require": {
@@ -657,7 +657,7 @@
                 "concrete5",
                 "concreteCMS"
             ],
-            "time": "2021-03-04T16:56:27+00:00"
+            "time": "2021-03-30T21:22:35+00:00"
         },
         {
             "name": "concrete5/dependency-patches",
@@ -2156,16 +2156,16 @@
         },
         {
             "name": "filp/whoops",
-            "version": "2.9.2",
+            "version": "2.11.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/filp/whoops.git",
-                "reference": "df7933820090489623ce0be5e85c7e693638e536"
+                "reference": "f6e14679f948d8a5cfb866fa7065a30c66bd64d3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/filp/whoops/zipball/df7933820090489623ce0be5e85c7e693638e536",
-                "reference": "df7933820090489623ce0be5e85c7e693638e536",
+                "url": "https://api.github.com/repos/filp/whoops/zipball/f6e14679f948d8a5cfb866fa7065a30c66bd64d3",
+                "reference": "f6e14679f948d8a5cfb866fa7065a30c66bd64d3",
                 "shasum": ""
             },
             "require": {
@@ -2219,7 +2219,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-24T12:00:00+00:00"
+            "time": "2021-03-19T12:00:00+00:00"
         },
         {
             "name": "gettext/gettext",
@@ -2460,16 +2460,16 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.7.0",
+            "version": "1.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3"
+                "reference": "35ea11d335fd638b5882ff1725228b3d35496ab1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/53330f47520498c0ae1f61f7e2c90f55690c06a3",
-                "reference": "53330f47520498c0ae1f61f7e2c90f55690c06a3",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/35ea11d335fd638b5882ff1725228b3d35496ab1",
+                "reference": "35ea11d335fd638b5882ff1725228b3d35496ab1",
                 "shasum": ""
             },
             "require": {
@@ -2527,7 +2527,7 @@
                 "uri",
                 "url"
             ],
-            "time": "2020-09-30T07:37:11+00:00"
+            "time": "2021-03-21T16:25:00+00:00"
         },
         {
             "name": "hautelook/phpass",
@@ -6170,16 +6170,16 @@
         },
         {
             "name": "symfony/inflector",
-            "version": "v4.4.20",
+            "version": "v4.4.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/inflector.git",
-                "reference": "a8691d012fb449ba49363a3b3e3e743f354f7d56"
+                "reference": "9455097d23776a4a10c817d903271bc1ce7596ff"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/inflector/zipball/a8691d012fb449ba49363a3b3e3e743f354f7d56",
-                "reference": "a8691d012fb449ba49363a3b3e3e743f354f7d56",
+                "url": "https://api.github.com/repos/symfony/inflector/zipball/9455097d23776a4a10c817d903271bc1ce7596ff",
+                "reference": "9455097d23776a4a10c817d903271bc1ce7596ff",
                 "shasum": ""
             },
             "require": {
@@ -6233,7 +6233,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-01-24T23:44:26+00:00"
+            "time": "2021-03-17T16:19:54+00:00"
         },
         {
             "name": "symfony/options-resolver",
@@ -9271,16 +9271,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "1.12.2",
+            "version": "1.13.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "245710e971a030f42e08f4912863805570f23d39"
+                "reference": "be1996ed8adc35c3fd795488a653f4b518be70ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/245710e971a030f42e08f4912863805570f23d39",
-                "reference": "245710e971a030f42e08f4912863805570f23d39",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/be1996ed8adc35c3fd795488a653f4b518be70ea",
+                "reference": "be1996ed8adc35c3fd795488a653f4b518be70ea",
                 "shasum": ""
             },
             "require": {
@@ -9330,7 +9330,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2020-12-19T10:15:11+00:00"
+            "time": "2021-03-17T13:42:18+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -9611,16 +9611,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "8.5.14",
+            "version": "8.5.15",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "c25f79895d27b6ecd5abfa63de1606b786a461a3"
+                "reference": "038d4196d8e8cb405cd5e82cedfe413ad6eef9ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/c25f79895d27b6ecd5abfa63de1606b786a461a3",
-                "reference": "c25f79895d27b6ecd5abfa63de1606b786a461a3",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/038d4196d8e8cb405cd5e82cedfe413ad6eef9ef",
+                "reference": "038d4196d8e8cb405cd5e82cedfe413ad6eef9ef",
                 "shasum": ""
             },
             "require": {
@@ -9700,7 +9700,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2021-01-17T07:37:30+00:00"
+            "time": "2021-03-17T07:27:54+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -10487,6 +10487,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "concrete5/community_translation": 20,
         "concrete5/core": 20,
         "concrete5/concrete_cms_theme": 20
     },

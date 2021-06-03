@@ -1,5 +1,14 @@
 <?php
 
+use PortlandLabs\ConcreteCmsTheme\Navigation\HeaderNavigationFactory;
+
+Events::addListener('on_before_render', function($event) {
+    // must be done in an event because it must come AFTER the concrete cms package registers the
+    // header navigation factory class as a singleton.
+    $headerNavigationFactory = app(HeaderNavigationFactory::class);
+    $headerNavigationFactory->setActiveSection(HeaderNavigationFactory::SECTION_COMMUNITY);
+});
+
 /*
  * ----------------------------------------------------------------------------
  * # Custom Application Handler
