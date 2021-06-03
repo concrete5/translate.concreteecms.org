@@ -521,12 +521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "1c4f2d0be5dd95aac82eb2abdb2958ebb949e5ca"
+                "reference": "dc519fde1dfec35e7f850ee2bc63339f298462fd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/1c4f2d0be5dd95aac82eb2abdb2958ebb949e5ca",
-                "reference": "1c4f2d0be5dd95aac82eb2abdb2958ebb949e5ca",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/dc519fde1dfec35e7f850ee2bc63339f298462fd",
+                "reference": "dc519fde1dfec35e7f850ee2bc63339f298462fd",
                 "shasum": ""
             },
             "type": "concrete5-package",
@@ -535,7 +535,7 @@
                 "MIT"
             ],
             "description": "Package that contains the official ConcreteCMS Theme.",
-            "time": "2021-03-30T21:33:11+00:00"
+            "time": "2021-05-18T19:18:54+00:00"
         },
         {
             "name": "concrete5/core",
@@ -543,12 +543,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete5-core.git",
-                "reference": "6b30d5ee1eda8255a6a3e271110e108522807dcb"
+                "reference": "1f5a615bf540ab2f58d0190108be292ddf6b4c48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/6b30d5ee1eda8255a6a3e271110e108522807dcb",
-                "reference": "6b30d5ee1eda8255a6a3e271110e108522807dcb",
+                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/1f5a615bf540ab2f58d0190108be292ddf6b4c48",
+                "reference": "1f5a615bf540ab2f58d0190108be292ddf6b4c48",
                 "shasum": ""
             },
             "require": {
@@ -657,7 +657,7 @@
                 "concrete5",
                 "concreteCMS"
             ],
-            "time": "2021-03-30T21:22:35+00:00"
+            "time": "2021-05-17T20:58:29+00:00"
         },
         {
             "name": "concrete5/dependency-patches",
