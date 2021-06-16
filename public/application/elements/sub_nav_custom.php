@@ -16,19 +16,19 @@ $page = Page::getCurrentPage();
                 <nav>
                     <ul>
                         <li <?php if ($page && $page->getCollectionPath() == '/teams') { ?>class="active"<?php } ?>>
-                            <a href="<?= Url::to("/teams"); ?>" target="_self">
+                            <a href="<?= URL::to("/teams"); ?>" target="_self">
                                 <?php echo t("Translation Teams"); ?>
                             </a>
                         </li>
 
                         <li <?php if ($page && $page->getCollectionPath() == '/translate') { ?>class="active"<?php } ?>>
-                            <a href="<?= Url::to("/translate"); ?>" target="_self">
+                            <a href="<?= URL::to("/translate"); ?>" target="_self">
                                 <?php echo t("Translate"); ?>
                             </a>
                         </li>
 
                         <li <?php if ($page && $page->getCollectionPath() == '/translate-your-packages') { ?>class="active"<?php } ?>>
-                            <a href="<?= Url::to("/translate-your-packages"); ?>" target="_self">
+                            <a href="<?= URL::to("/translate-your-packages"); ?>" target="_self">
                                 <?php echo t("Translate your packages"); ?>
                             </a>
                         </li>
