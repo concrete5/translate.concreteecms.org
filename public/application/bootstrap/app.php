@@ -5,8 +5,12 @@ use PortlandLabs\ConcreteCmsTheme\Navigation\HeaderNavigationFactory;
 Events::addListener('on_before_render', function($event) {
     // must be done in an event because it must come AFTER the concrete cms package registers the
     // header navigation factory class as a singleton.
-    $headerNavigationFactory = app(HeaderNavigationFactory::class);
-    $headerNavigationFactory->setActiveSection(HeaderNavigationFactory::SECTION_COMMUNITY);
+    //
+    // needs to check first if the class exists. because when it's a fresh installation the installer won't run
+    if (class_exists(HeaderNavigationFactory::class)) {
+        $headerNavigationFactory = app(HeaderNavigationFactory::class);
+        $headerNavigationFactory->setActiveSection(HeaderNavigationFactory::SECTION_COMMUNITY);
+    }
 });
 
 /*
