@@ -3,7 +3,7 @@
 
     <packages>
         <package handle="concrete_cms_theme"/>
-        <package handle="community_translation"/>
+        <package handle="community_translation" full-content-swap="true"/>
     </packages>
 
 </concrete5-cif>
