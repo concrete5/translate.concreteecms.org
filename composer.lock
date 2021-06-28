@@ -592,12 +592,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "77c77daeb44fc9dee0c84a5e320d2a460cce5ccb"
+                "reference": "371702f4642300143bbc90d320627a7c5aca6f53"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/77c77daeb44fc9dee0c84a5e320d2a460cce5ccb",
-                "reference": "77c77daeb44fc9dee0c84a5e320d2a460cce5ccb",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/371702f4642300143bbc90d320627a7c5aca6f53",
+                "reference": "371702f4642300143bbc90d320627a7c5aca6f53",
                 "shasum": ""
             },
             "default-branch": true,
@@ -611,7 +611,7 @@
                 "issues": "https://github.com/concrete5/concrete_cms_theme/issues",
                 "source": "https://github.com/concrete5/concrete_cms_theme/tree/master"
             },
-            "time": "2021-06-23T17:09:16+00:00"
+            "time": "2021-06-28T17:20:27+00:00"
         },
         {
             "name": "concrete5/core",
@@ -619,18 +619,18 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete5-core.git",
-                "reference": "8d8aa973f7af3ab21a26d2d88c9098301c87ad2e"
+                "reference": "f997048a4ca93923b9851964c8219d4d4709a602"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/8d8aa973f7af3ab21a26d2d88c9098301c87ad2e",
-                "reference": "8d8aa973f7af3ab21a26d2d88c9098301c87ad2e",
+                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/f997048a4ca93923b9851964c8219d4d4709a602",
+                "reference": "f997048a4ca93923b9851964c8219d4d4709a602",
                 "shasum": ""
             },
             "require": {
                 "anahkiasen/html-object": "~1.4",
                 "bernard/bernard": "1.0.0-alpha9",
-                "commerceguys/addressing": "^1.0",
+                "commerceguys/addressing": "^1.2.0",
                 "concrete5/doctrine-xml": "^1.2.0",
                 "concrete5/oauth-user-data": "~1.0",
                 "concrete5/zend-queue": "0.9.*",
@@ -745,7 +745,7 @@
                 "slack": "https://www.concrete5.org/slack",
                 "source": "http://documentation.concrete5.org/api/"
             },
-            "time": "2021-06-17T17:04:30+00:00"
+            "time": "2021-06-28T17:13:21+00:00"
         },
         {
             "name": "concrete5/dependency-patches",
@@ -3498,16 +3498,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.1.3",
+            "version": "1.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "9be3b16c877d477357c015cec057548cf9b2a14a"
+                "reference": "f3ad69181b8afed2c9edf7be5a2918144ff4ea32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/9be3b16c877d477357c015cec057548cf9b2a14a",
-                "reference": "9be3b16c877d477357c015cec057548cf9b2a14a",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/f3ad69181b8afed2c9edf7be5a2918144ff4ea32",
+                "reference": "f3ad69181b8afed2c9edf7be5a2918144ff4ea32",
                 "shasum": ""
             },
             "require": {
@@ -3523,7 +3523,6 @@
                 "phpunit/phpunit": "^8.5.8"
             },
             "suggest": {
-                "ext-fileinfo": "Required for MimeType",
                 "ext-ftp": "Allows you to use FTP server storage",
                 "ext-openssl": "Allows you to use FTPS server storage",
                 "league/flysystem-aws-s3-v2": "Allows you to use S3 storage with AWS SDK v2",
@@ -3581,7 +3580,7 @@
             ],
             "support": {
                 "issues": "https://github.com/thephpleague/flysystem/issues",
-                "source": "https://github.com/thephpleague/flysystem/tree/1.x"
+                "source": "https://github.com/thephpleague/flysystem/tree/1.1.4"
             },
             "funding": [
                 {
@@ -3589,7 +3588,7 @@
                     "type": "other"
                 }
             ],
-            "time": "2020-08-23T07:39:11+00:00"
+            "time": "2021-06-23T21:56:05+00:00"
         },
         {
             "name": "league/flysystem-cached-adapter",
