@@ -592,12 +592,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "371702f4642300143bbc90d320627a7c5aca6f53"
+                "reference": "811f064980736adba141d85d96510f4bf6117817"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/371702f4642300143bbc90d320627a7c5aca6f53",
-                "reference": "371702f4642300143bbc90d320627a7c5aca6f53",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/811f064980736adba141d85d96510f4bf6117817",
+                "reference": "811f064980736adba141d85d96510f4bf6117817",
                 "shasum": ""
             },
             "default-branch": true,
@@ -611,7 +611,7 @@
                 "issues": "https://github.com/concrete5/concrete_cms_theme/issues",
                 "source": "https://github.com/concrete5/concrete_cms_theme/tree/master"
             },
-            "time": "2021-06-28T17:20:27+00:00"
+            "time": "2021-06-30T20:21:01+00:00"
         },
         {
             "name": "concrete5/core",
@@ -619,12 +619,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete5-core.git",
-                "reference": "f997048a4ca93923b9851964c8219d4d4709a602"
+                "reference": "107efce0037c4b3f18e27dc2502807279f628409"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/f997048a4ca93923b9851964c8219d4d4709a602",
-                "reference": "f997048a4ca93923b9851964c8219d4d4709a602",
+                "url": "https://api.github.com/repos/concrete5/concrete5-core/zipball/107efce0037c4b3f18e27dc2502807279f628409",
+                "reference": "107efce0037c4b3f18e27dc2502807279f628409",
                 "shasum": ""
             },
             "require": {
@@ -745,7 +745,7 @@
                 "slack": "https://www.concrete5.org/slack",
                 "source": "http://documentation.concrete5.org/api/"
             },
-            "time": "2021-06-28T17:13:21+00:00"
+            "time": "2021-06-30T22:06:09+00:00"
         },
         {
             "name": "concrete5/dependency-patches",
@@ -3197,16 +3197,16 @@
         },
         {
             "name": "kamermans/guzzle-oauth2-subscriber",
-            "version": "v1.0.8",
+            "version": "v1.0.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kamermans/guzzle-oauth2-subscriber.git",
-                "reference": "18fb67c97f38c6b463f1ccdcad95b641666e42c1"
+                "reference": "840fde5cf9971afa8b6f161baa84a7b14a72fada"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kamermans/guzzle-oauth2-subscriber/zipball/18fb67c97f38c6b463f1ccdcad95b641666e42c1",
-                "reference": "18fb67c97f38c6b463f1ccdcad95b641666e42c1",
+                "url": "https://api.github.com/repos/kamermans/guzzle-oauth2-subscriber/zipball/840fde5cf9971afa8b6f161baa84a7b14a72fada",
+                "reference": "840fde5cf9971afa8b6f161baa84a7b14a72fada",
                 "shasum": ""
             },
             "require": {
@@ -3236,9 +3236,9 @@
             ],
             "support": {
                 "issues": "https://github.com/kamermans/guzzle-oauth2-subscriber/issues",
-                "source": "https://github.com/kamermans/guzzle-oauth2-subscriber/tree/v1.0.8"
+                "source": "https://github.com/kamermans/guzzle-oauth2-subscriber/tree/v1.0.9"
             },
-            "time": "2020-12-10T00:38:57+00:00"
+            "time": "2021-06-28T17:29:34+00:00"
         },
         {
             "name": "kylekatarnls/update-helper",
