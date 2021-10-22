@@ -592,12 +592,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "abb9740808e0f9b2ecb5885de9da5e4a197ea5b5"
+                "reference": "f2a8d1e9dd504096dccbbe0e017dbe2b7e472abb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/abb9740808e0f9b2ecb5885de9da5e4a197ea5b5",
-                "reference": "abb9740808e0f9b2ecb5885de9da5e4a197ea5b5",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/f2a8d1e9dd504096dccbbe0e017dbe2b7e472abb",
+                "reference": "f2a8d1e9dd504096dccbbe0e017dbe2b7e472abb",
                 "shasum": ""
             },
             "default-branch": true,
@@ -611,7 +611,7 @@
                 "issues": "https://github.com/concrete5/concrete_cms_theme/issues",
                 "source": "https://github.com/concrete5/concrete_cms_theme/tree/master"
             },
-            "time": "2021-10-18T23:44:59+00:00"
+            "time": "2021-10-22T23:24:03+00:00"
         },
         {
             "name": "concrete5/core",
