@@ -14,7 +14,7 @@
     "concrete5/community_translation": "2021.x-dev",
     "concrete5/core": "dev-develop",
     "doctrine/persistence": "^1",
-    "mlocati/concrete5-translation-library": "^1.6.0",
+    "mlocati/concrete5-translation-library": "^1.7.0",
     "concrete5/dependency-patches": "^1.4.0",
     "vlucas/phpdotenv": "^2.4",
     "concrete5/concrete_cms_theme": "dev-master"
