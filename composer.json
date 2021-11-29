@@ -17,14 +17,18 @@
     "mlocati/concrete5-translation-library": "^1.7.0",
     "concrete5/dependency-patches": "^1.4.0",
     "vlucas/phpdotenv": "^2.4",
-    "concrete5/concrete_cms_theme": "dev-master"
+    "concrete5/concrete_cms_theme": "dev-master",
+    "hautelook/phpass": "0.3.5"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.0",
     "mockery/mockery": "^1.2"
   },
   "config": {
-    "preferred-install": "dist"
+    "preferred-install": "dist",
+    "platform": {
+      "php": "7.4.26"
+    }
   },
   "extra": {
     "allow-subpatches": [
@@ -54,6 +58,17 @@
           "url": "https://bitbucket.org/aembler/addon_markdown.git",
           "type": "git",
           "reference": "master"
+        }
+      }
+    },
+    "phpass": {
+      "type": "package",
+      "package": {
+        "name": "hautelook/phpass",
+        "version": "0.3.5",
+        "dist": {
+          "url": "https://codeload.github.com/ozh/phpass/zip/refs/tags/0.3.5",
+          "type": "zip"
         }
       }
     }
