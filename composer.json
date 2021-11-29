@@ -6,7 +6,8 @@
   "prefer-stable": true,
   "autoload": {
     "psr-4": {
-      "Concrete5\\Translate\\": "src"
+      "Concrete5\\Translate\\": "src",
+      "Hautelook\\Phpass\\": "vendor/hautelook/phpass/src/Hautelook/Phpass"
     }
   },
   "require": {
