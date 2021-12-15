@@ -4,6 +4,12 @@ defined('C5_EXECUTE') or die('Access Denied.');
 # Load in the composer vendor files
 require_once __DIR__ . "/../../../vendor/autoload.php";
 
+# Alias old lifecycle events class for compatibility
+class_alias(
+  \Doctrine\ORM\Event\LifecycleEventArgs::class,
+  \Doctrine\Common\Persistence\Event\LifecycleEventArgs::class
+);
+
 # Try loading in environment info
 $env = new \Dotenv\Dotenv(__DIR__ . '/../../../');
 try {
