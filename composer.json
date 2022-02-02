@@ -16,12 +16,16 @@
     "doctrine/persistence": "^1",
     "mlocati/concrete5-translation-library": "^1.7.0",
     "concrete5/dependency-patches": "^1.4.0",
+    "concrete5/phpass-compat": ">=1",
     "vlucas/phpdotenv": "^2.4",
     "concrete5/concrete_cms_theme": "dev-master"
   },
   "require-dev": {
     "phpunit/phpunit": "^8.0",
     "mockery/mockery": "^1.2"
+  },
+  "provide": {
+    "hautelook/phpass": "*"
   },
   "config": {
     "preferred-install": "dist"

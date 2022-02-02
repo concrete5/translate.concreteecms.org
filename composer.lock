@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef8bf2c2ce20e37d0ba26710a4091345",
+    "content-hash": "acd62323fa6a203b9b3526350e5f3bac",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -924,6 +924,46 @@
                 "source": "https://github.com/concrete5-forks/PHPoAuthUserData/tree/master"
             },
             "time": "2017-10-29T23:05:04+00:00"
+        },
+        {
+            "name": "concrete5/phpass-compat",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/concrete5/phpass-compat.git",
+                "reference": "754faee577f2595fa81dd1f9a932faee22f06279"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/concrete5/phpass-compat/zipball/754faee577f2595fa81dd1f9a932faee22f06279",
+                "reference": "754faee577f2595fa81dd1f9a932faee22f06279",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Hautelook\\Phpass\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Korvin Szanto",
+                    "email": "me@kor.vin"
+                }
+            ],
+            "description": "Hautlook/phpass shim",
+            "support": {
+                "issues": "https://github.com/concrete5/phpass-compat/issues",
+                "source": "https://github.com/concrete5/phpass-compat/tree/1.0"
+            },
+            "time": "2021-09-10T18:28:59+00:00"
         },
         {
             "name": "concrete5/zend-queue",
@@ -2723,54 +2763,6 @@
                 "source": "https://github.com/guzzle/psr7/tree/1.8.2"
             },
             "time": "2021-04-26T09:17:50+00:00"
-        },
-        {
-            "name": "hautelook/phpass",
-            "version": "0.3.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/hautelook/phpass.git",
-                "reference": "b4cbd9b67ed3ef5672ec79d8e0c46d24bd844abd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/hautelook/phpass/zipball/b4cbd9b67ed3ef5672ec79d8e0c46d24bd844abd",
-                "reference": "b4cbd9b67ed3ef5672ec79d8e0c46d24bd844abd",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Hautelook": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Public Domain"
-            ],
-            "authors": [
-                {
-                    "name": "Solar Designer",
-                    "email": "solar@openwall.com",
-                    "homepage": "http://openwall.com/phpass/"
-                }
-            ],
-            "description": "Portable PHP password hashing framework",
-            "homepage": "http://github.com/hautelook/phpass/",
-            "keywords": [
-                "blowfish",
-                "crypt",
-                "password",
-                "security"
-            ],
-            "support": {
-                "issues": "https://github.com/hautelook/phpass/issues",
-                "source": "https://github.com/hautelook/phpass/tree/0.3.x"
-            },
-            "time": "2012-08-31T00:00:00+00:00"
         },
         {
             "name": "htmlawed/htmlawed",
