@@ -1,5 +1,6 @@
 <?php
-namespace Concrete5\Translate\Http;
+
+namespace ConcreteCMS\Translate\Http;
 
 use Concrete\Core\Http\Middleware\DelegateInterface;
 use Concrete\Core\Http\Middleware\MiddlewareInterface;
