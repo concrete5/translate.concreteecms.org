@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f6a856272115babc277c7c87148bcd77",
+    "content-hash": "f5dc174d9474c8a7b9fa1a63c98de92d",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -13006,6 +13006,7 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "concrete5/community_badges_client": 20,
         "concrete5/community_translation": 20,
         "concrete5/concrete_cms_theme": 20
     },
