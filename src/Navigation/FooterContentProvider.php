@@ -1,15 +1,15 @@
 <?php
 
+declare(strict_types=1);
+
 namespace ConcreteCMS\Translate\Navigation;
 
 use Concrete\Core\Application\Application;
-use Concrete\Core\Cache\Level\ExpensiveCache;
+use Concrete\Core\Cache;
 use Concrete\Core\Http\Client\Client;
 use DOMDocument;
 use DOMXPath;
 use RuntimeException;
-
-defined('C5_EXECUTE') or die('Access Denied.');
 
 class FooterContentProvider
 {
@@ -18,9 +18,9 @@ class FooterContentProvider
 
     private Application $app;
 
-    private ExpensiveCache $cache;
+    private Cache\Cache $cache;
 
-    public function __construct(Application $app, ExpensiveCache $cache)
+    public function __construct(Application $app, Cache\Level\ExpensiveCache $cache)
     {
         $this->app = $app;
         $this->cache = $cache;
@@ -54,22 +54,22 @@ class FooterContentProvider
 
     private function extractFooterContentHtml(string $pageHtml): string
     {
+        $doc = new DOMDocument();
         // Disable error report for libxml to prevent loading issues because of missing html validation etc.
-        $libXmlErrors = libxml_use_internal_errors(true);
+        $prevLibXmlErrors = libxml_use_internal_errors(true);
         try {
-            $doc = new DOMDocument();
             $doc->loadHTML($pageHtml);
         } finally {
-            libxml_use_internal_errors($libXmlErrors);
+            libxml_use_internal_errors($prevLibXmlErrors);
         }
         $xpath = new DOMXPath($doc);
         $footerNode = $doc->getElementsByTagName('footer')->item(0);
         if ($footerNode === null) {
-            throw new RuntimeException('footer element not found in ' . self::REMOTE_URL);
+            throw new RuntimeException(sprintf('footer element not found in %s', self::REMOTE_URL));
         }
         $footerContainerNode = $xpath->query('div/div[1]', $footerNode)->item(0);
         if ($footerContainerNode === null) {
-            throw new RuntimeException('footer element retrieved from in ' . self::REMOTE_URL . " doesn't contain expected structure");
+            throw new RuntimeException(sprintf("footer element retrieved from in %s doesn't contain expected structure", self::REMOTE_URL));
         }
 
         return $doc->saveHTML($footerContainerNode);
