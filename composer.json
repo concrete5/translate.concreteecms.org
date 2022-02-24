@@ -28,6 +28,11 @@
     "hautelook/phpass": "*"
   },
   "config": {
+    "allow-plugins": {
+      "composer/installers": true,
+      "kylekatarnls/update-helper": true,
+      "mlocati/composer-patcher": true
+    },
     "preferred-install": "dist"
   },
   "extra": {
