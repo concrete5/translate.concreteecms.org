@@ -15,7 +15,7 @@
     "concrete5/community_badges_client": "dev-master",
     "concrete5/community_translation": "2021.x-dev",
     "concrete5/concrete_cms_theme": "dev-master",
-    "concrete5/core": "^9.0.2",
+    "concrete5/core": "dev-develop as 9.x-dev",
     "concrete5/dependency-patches": "^1.6.1",
     "mlocati/concrete5-translation-library": "^1.7.1",
     "vlucas/phpdotenv": "^2.4"
@@ -28,7 +28,8 @@
     "allow-plugins": {
       "composer/installers": true,
       "kylekatarnls/update-helper": true,
-      "mlocati/composer-patcher": true
+      "mlocati/composer-patcher": true,
+      "wikimedia/composer-merge-plugin": true
     },
     "platform": {
         "php": "7.4.26"
