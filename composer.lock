@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8dd52a9eaa1752a03ef5cc8c6d17af83",
+    "content-hash": "032668f9e2b331c0e4c74fcc3fc0b8e6",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -376,20 +376,21 @@
         },
         {
             "name": "concrete5/community_translation",
-            "version": "2021.x-dev",
+            "version": "1.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/addon_community_translation.git",
-                "reference": "dc0869c63946550c5d75f6bd3682c491d17dbc3f"
+                "reference": "f847cd6aa5ca11a03091474e2d15fa4c2e2bf1b8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/dc0869c63946550c5d75f6bd3682c491d17dbc3f",
-                "reference": "dc0869c63946550c5d75f6bd3682c491d17dbc3f",
+                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/f847cd6aa5ca11a03091474e2d15fa4c2e2bf1b8",
+                "reference": "f847cd6aa5ca11a03091474e2d15fa4c2e2bf1b8",
                 "shasum": ""
             },
             "require": {
-                "concrete5/community_badges_client": "dev-master"
+                "concrete5/core": "^9.0.3a1",
+                "php": "^7.4 || ^8"
             },
             "type": "concrete5-package",
             "notification-url": "https://packagist.org/downloads/",
@@ -402,7 +403,7 @@
                 "issues": "https://github.com/concrete5/addon_community_translation/issues",
                 "source": "https://github.com/concrete5/addon_community_translation"
             },
-            "time": "2021-06-17T16:19:17+00:00"
+            "time": "2022-03-10T13:01:43+00:00"
         },
         {
             "name": "concrete5/concrete_cms_theme",
@@ -13076,7 +13077,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "concrete5/community_badges_client": 20,
-        "concrete5/community_translation": 20,
         "concrete5/concrete_cms_theme": 20,
         "concrete5/core": 20
     },
