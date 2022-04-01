@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6a5079c31cfec9afda167f4909e6f98c",
+    "content-hash": "aa72ac4460faa285d5db6360075ab3f7",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -380,12 +380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/addon_community_translation.git",
-                "reference": "7a90938cf9310ef370adbcb4ae7204e39d1a617f"
+                "reference": "023cd38075690649958dcba28510c5012710ba14"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/7a90938cf9310ef370adbcb4ae7204e39d1a617f",
-                "reference": "7a90938cf9310ef370adbcb4ae7204e39d1a617f",
+                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/023cd38075690649958dcba28510c5012710ba14",
+                "reference": "023cd38075690649958dcba28510c5012710ba14",
                 "shasum": ""
             },
             "require": {
@@ -404,7 +404,7 @@
                 "issues": "https://github.com/concrete5/addon_community_translation/issues",
                 "source": "https://github.com/concrete5/addon_community_translation"
             },
-            "time": "2022-03-31T17:33:32+00:00"
+            "time": "2022-04-01T07:29:52+00:00"
         },
         {
             "name": "concrete5/concrete_cms_theme",
@@ -13089,5 +13089,5 @@
     "platform-overrides": {
         "php": "7.4.26"
     },
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
