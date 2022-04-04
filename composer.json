@@ -27,7 +27,8 @@
   "config": {
     "allow-plugins": {
       "composer/installers": true,
-      "mlocati/composer-patcher": true
+      "mlocati/composer-patcher": true,
+      "kylekatarnls/update-helper": true
     },
     "platform": {
         "php": "7.4.26"
