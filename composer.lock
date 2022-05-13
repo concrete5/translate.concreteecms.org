@@ -376,16 +376,16 @@
         },
         {
             "name": "concrete5/community_translation",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/addon_community_translation.git",
-                "reference": "c399365dccc73a1c73b6d571c6d453870c1f99a8"
+                "reference": "ae3247733f1334ce5a44596ba9f74a725b0513a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/c399365dccc73a1c73b6d571c6d453870c1f99a8",
-                "reference": "c399365dccc73a1c73b6d571c6d453870c1f99a8",
+                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/ae3247733f1334ce5a44596ba9f74a725b0513a6",
+                "reference": "ae3247733f1334ce5a44596ba9f74a725b0513a6",
                 "shasum": ""
             },
             "require": {
@@ -403,7 +403,7 @@
                 "issues": "https://github.com/concrete5/addon_community_translation/issues",
                 "source": "https://github.com/concrete5/addon_community_translation"
             },
-            "time": "2022-05-03T12:15:36+00:00"
+            "time": "2022-05-13T19:29:46+00:00"
         },
         {
             "name": "concrete5/concrete_cms_theme",
