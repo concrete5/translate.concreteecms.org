@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "aa72ac4460faa285d5db6360075ab3f7",
+    "content-hash": "032668f9e2b331c0e4c74fcc3fc0b8e6",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -376,23 +376,22 @@
         },
         {
             "name": "concrete5/community_translation",
-            "version": "dev-main",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/addon_community_translation.git",
-                "reference": "023cd38075690649958dcba28510c5012710ba14"
+                "reference": "ae3247733f1334ce5a44596ba9f74a725b0513a6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/023cd38075690649958dcba28510c5012710ba14",
-                "reference": "023cd38075690649958dcba28510c5012710ba14",
+                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/ae3247733f1334ce5a44596ba9f74a725b0513a6",
+                "reference": "ae3247733f1334ce5a44596ba9f74a725b0513a6",
                 "shasum": ""
             },
             "require": {
                 "concrete5/core": "^9.0.3a1",
                 "php": "^7.4 || ^8"
             },
-            "default-branch": true,
             "type": "concrete5-package",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -404,7 +403,7 @@
                 "issues": "https://github.com/concrete5/addon_community_translation/issues",
                 "source": "https://github.com/concrete5/addon_community_translation"
             },
-            "time": "2022-04-01T07:29:52+00:00"
+            "time": "2022-05-13T19:29:46+00:00"
         },
         {
             "name": "concrete5/concrete_cms_theme",
@@ -412,12 +411,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "963a27f3247889f4f71c2a3f8a873964482339cb"
+                "reference": "a2ec6c39be103a1439f9d110dbc774f96f8dc832"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/963a27f3247889f4f71c2a3f8a873964482339cb",
-                "reference": "963a27f3247889f4f71c2a3f8a873964482339cb",
+                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/a2ec6c39be103a1439f9d110dbc774f96f8dc832",
+                "reference": "a2ec6c39be103a1439f9d110dbc774f96f8dc832",
                 "shasum": ""
             },
             "default-branch": true,
@@ -431,7 +430,7 @@
                 "issues": "https://github.com/concrete5/concrete_cms_theme/issues",
                 "source": "https://github.com/concrete5/concrete_cms_theme/tree/master"
             },
-            "time": "2022-04-04T20:07:49+00:00"
+            "time": "2022-04-28T22:38:18+00:00"
         },
         {
             "name": "concrete5/core",
@@ -13078,7 +13077,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "concrete5/community_badges_client": 20,
-        "concrete5/community_translation": 20,
         "concrete5/concrete_cms_theme": 20,
         "concrete5/core": 20
     },
