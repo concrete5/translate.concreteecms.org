@@ -29,6 +29,7 @@ include:
 
 # Test with PHPUnit
 test:phpunit:
+  allow_failure: true
   stage: test
   rules:
     - if: $CI_PIPELINE_SOURCE == 'external_pull_request_event' || $CI_PIPELINE_SOURCE == 'push'
@@ -49,6 +50,7 @@ test:phpunit:
 
 # Test with PHPCS
 test:phpcs:
+  allow_failure: true
   stage: test
   rules:
     - if: $CI_PIPELINE_SOURCE == 'external_pull_request_event' || $CI_PIPELINE_SOURCE == 'push'
