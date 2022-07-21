@@ -1,0 +1,18 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /tmp/codedeployupload
+hooks:
+  BeforeInstall:
+    - location: scripts/before_install.sh
+      timeout: 300
+  AfterInstall:
+    - location: scripts/create_symlinks.sh
+    - location: scripts/generate_proxies.sh
+    - location: scripts/activate_release.sh
+    - location: scripts/cleanup_releases.sh
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/reload_services.sh
+      timeout: 300
