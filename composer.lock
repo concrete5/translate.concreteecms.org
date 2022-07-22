@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "032668f9e2b331c0e4c74fcc3fc0b8e6",
+    "content-hash": "4f3c382a81d8b50eaa035141199daf12",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -404,33 +404,6 @@
                 "source": "https://github.com/concrete5/addon_community_translation"
             },
             "time": "2022-05-13T19:29:46+00:00"
-        },
-        {
-            "name": "concrete5/concrete_cms_theme",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/concrete5/concrete_cms_theme.git",
-                "reference": "a1b9d42543bf70af9ef73985e4e008b9973cab1c"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/concrete_cms_theme/zipball/a1b9d42543bf70af9ef73985e4e008b9973cab1c",
-                "reference": "a1b9d42543bf70af9ef73985e4e008b9973cab1c",
-                "shasum": ""
-            },
-            "default-branch": true,
-            "type": "concrete5-package",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Package that contains the official ConcreteCMS Theme.",
-            "support": {
-                "issues": "https://github.com/concrete5/concrete_cms_theme/issues",
-                "source": "https://github.com/concrete5/concrete_cms_theme/tree/master"
-            },
-            "time": "2022-06-09T17:19:17+00:00"
         },
         {
             "name": "concrete5/core",
@@ -842,6 +815,33 @@
                 "source": "https://github.com/concrete5-forks/PHPoAuthUserData/tree/master"
             },
             "time": "2017-10-29T23:05:04+00:00"
+        },
+        {
+            "name": "concretecms/concrete_cms_theme",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/concretecms/concrete_cms_theme.git",
+                "reference": "e0b43ae9890afab531f5e1e6c850f75034a4f750"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/concretecms/concrete_cms_theme/zipball/e0b43ae9890afab531f5e1e6c850f75034a4f750",
+                "reference": "e0b43ae9890afab531f5e1e6c850f75034a4f750",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "concrete5-package",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Package that contains the official ConcreteCMS Theme.",
+            "support": {
+                "issues": "https://github.com/concretecms/concrete_cms_theme/issues",
+                "source": "https://github.com/concretecms/concrete_cms_theme/tree/master"
+            },
+            "time": "2022-07-21T22:29:13+00:00"
         },
         {
             "name": "container-interop/container-interop",
@@ -13077,7 +13077,7 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "concrete5/community_badges_client": 20,
-        "concrete5/concrete_cms_theme": 20,
+        "concretecms/concrete_cms_theme": 20,
         "concrete5/core": 20
     },
     "prefer-stable": true,
