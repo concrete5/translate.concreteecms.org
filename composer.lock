@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4f3c382a81d8b50eaa035141199daf12",
+    "content-hash": "07caf7c81b1c18092431c1050cc35ed4",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -373,37 +373,6 @@
                 "source": "https://github.com/concrete5/community_badges_client/tree/master"
             },
             "time": "2022-03-03T15:57:29+00:00"
-        },
-        {
-            "name": "concrete5/community_translation",
-            "version": "1.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/concrete5/addon_community_translation.git",
-                "reference": "ae3247733f1334ce5a44596ba9f74a725b0513a6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/concrete5/addon_community_translation/zipball/ae3247733f1334ce5a44596ba9f74a725b0513a6",
-                "reference": "ae3247733f1334ce5a44596ba9f74a725b0513a6",
-                "shasum": ""
-            },
-            "require": {
-                "concrete5/core": "^9.0.3a1",
-                "php": "^7.4 || ^8"
-            },
-            "type": "concrete5-package",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "concrete5 translation package",
-            "homepage": "https://github.com/concrete5/addon_community_translation",
-            "support": {
-                "issues": "https://github.com/concrete5/addon_community_translation/issues",
-                "source": "https://github.com/concrete5/addon_community_translation"
-            },
-            "time": "2022-05-13T19:29:46+00:00"
         },
         {
             "name": "concrete5/core",
@@ -815,6 +784,37 @@
                 "source": "https://github.com/concrete5-forks/PHPoAuthUserData/tree/master"
             },
             "time": "2017-10-29T23:05:04+00:00"
+        },
+        {
+            "name": "concretecms/community_translation",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/concretecms/addon_community_translation.git",
+                "reference": "65f7d896f752d0de34bd2838dd2ef3d801a75d2b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/concretecms/addon_community_translation/zipball/65f7d896f752d0de34bd2838dd2ef3d801a75d2b",
+                "reference": "65f7d896f752d0de34bd2838dd2ef3d801a75d2b",
+                "shasum": ""
+            },
+            "require": {
+                "concrete5/core": "^9.0.3a1",
+                "php": "^7.4 || ^8"
+            },
+            "type": "concrete5-package",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Concrete CMS translation package",
+            "homepage": "https://github.com/concretecms/addon_community_translation",
+            "support": {
+                "issues": "https://github.com/concretecms/addon_community_translation/issues",
+                "source": "https://github.com/concretecms/addon_community_translation"
+            },
+            "time": "2022-08-05T09:58:49+00:00"
         },
         {
             "name": "concretecms/concrete_cms_theme",
@@ -13077,8 +13077,8 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "concrete5/community_badges_client": 20,
-        "concretecms/concrete_cms_theme": 20,
-        "concrete5/core": 20
+        "concrete5/core": 20,
+        "concretecms/concrete_cms_theme": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
