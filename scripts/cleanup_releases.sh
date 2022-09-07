@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 
-source "/tmp/.cdvariables"
+source "/tmp/$DEPLOYMENT_ID/.cdvariables"
 
 # count number of directories in /releases
 releasedircount=$(find $projectdir/releases/ -mindepth 1 -maxdepth 1 -type d | wc -l)
