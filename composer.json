@@ -11,6 +11,7 @@
     }
   },
   "require": {
+    "php": "^8.2",
     "composer/installers": "^1.3",
     "concrete5/community_badges_client": "dev-master",
     "concrete5/core": "dev-develop as 9.x-dev",
@@ -29,9 +30,6 @@
       "composer/installers": true,
       "mlocati/composer-patcher": true,
       "kylekatarnls/update-helper": true
-    },
-    "platform": {
-        "php": "7.4.26"
     },
     "preferred-install": "dist",
     "sort-packages": true
