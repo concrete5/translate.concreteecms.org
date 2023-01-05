@@ -810,12 +810,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/addon_community_translation.git",
-                "reference": "cd5b8ab733c7006e9740bc3488ddab0de7a74122"
+                "reference": "911cb2ce31ac62e6a4061a072a917e522215370d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/addon_community_translation/zipball/cd5b8ab733c7006e9740bc3488ddab0de7a74122",
-                "reference": "cd5b8ab733c7006e9740bc3488ddab0de7a74122",
+                "url": "https://api.github.com/repos/concretecms/addon_community_translation/zipball/911cb2ce31ac62e6a4061a072a917e522215370d",
+                "reference": "911cb2ce31ac62e6a4061a072a917e522215370d",
                 "shasum": ""
             },
             "require": {
@@ -833,7 +833,7 @@
                 "issues": "https://github.com/concretecms/addon_community_translation/issues",
                 "source": "https://github.com/concretecms/addon_community_translation"
             },
-            "time": "2023-01-04T17:31:19+00:00"
+            "time": "2023-01-05T20:57:13+00:00"
         },
         {
             "name": "concretecms/concrete_cms_theme",
@@ -841,12 +841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/concrete_cms_theme.git",
-                "reference": "a231dadeeefc243f36351028f70c9667cd45ade2"
+                "reference": "301f90ff4a71670577df4d4f06df69fbac97e783"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/concrete_cms_theme/zipball/a231dadeeefc243f36351028f70c9667cd45ade2",
-                "reference": "a231dadeeefc243f36351028f70c9667cd45ade2",
+                "url": "https://api.github.com/repos/concretecms/concrete_cms_theme/zipball/301f90ff4a71670577df4d4f06df69fbac97e783",
+                "reference": "301f90ff4a71670577df4d4f06df69fbac97e783",
                 "shasum": ""
             },
             "type": "concrete5-package",
@@ -859,7 +859,7 @@
                 "issues": "https://github.com/concretecms/concrete_cms_theme/issues",
                 "source": "https://github.com/concretecms/concrete_cms_theme/tree/bedrock-1.4"
             },
-            "time": "2023-01-04T17:40:04+00:00"
+            "time": "2023-01-05T22:55:10+00:00"
         },
         {
             "name": "dapphp/securimage",
