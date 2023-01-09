@@ -382,12 +382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/concretecms-core.git",
-                "reference": "3a8fc5f16346c40dfd7e8fbd22385913c3632e8a"
+                "reference": "7b93701b665b103431e48203f5e98a7d955b540f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/concretecms-core/zipball/3a8fc5f16346c40dfd7e8fbd22385913c3632e8a",
-                "reference": "3a8fc5f16346c40dfd7e8fbd22385913c3632e8a",
+                "url": "https://api.github.com/repos/concretecms/concretecms-core/zipball/7b93701b665b103431e48203f5e98a7d955b540f",
+                "reference": "7b93701b665b103431e48203f5e98a7d955b540f",
                 "shasum": ""
             },
             "require": {
@@ -530,7 +530,7 @@
                 "forum": "https://forums.concretecms.org/",
                 "source": "http://documentation.concretecms.org/api/"
             },
-            "time": "2022-12-23T17:50:05+00:00"
+            "time": "2023-01-07T00:26:34+00:00"
         },
         {
             "name": "concrete5/dependency-patches",
@@ -841,12 +841,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/concrete_cms_theme.git",
-                "reference": "301f90ff4a71670577df4d4f06df69fbac97e783"
+                "reference": "a1d9e7ec35bd8f4fbcd32111a154ed56e4204a54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/concrete_cms_theme/zipball/301f90ff4a71670577df4d4f06df69fbac97e783",
-                "reference": "301f90ff4a71670577df4d4f06df69fbac97e783",
+                "url": "https://api.github.com/repos/concretecms/concrete_cms_theme/zipball/a1d9e7ec35bd8f4fbcd32111a154ed56e4204a54",
+                "reference": "a1d9e7ec35bd8f4fbcd32111a154ed56e4204a54",
                 "shasum": ""
             },
             "type": "concrete5-package",
@@ -859,7 +859,7 @@
                 "issues": "https://github.com/concretecms/concrete_cms_theme/issues",
                 "source": "https://github.com/concretecms/concrete_cms_theme/tree/bedrock-1.4"
             },
-            "time": "2023-01-05T22:55:10+00:00"
+            "time": "2023-01-07T20:06:08+00:00"
         },
         {
             "name": "dapphp/securimage",
@@ -4114,16 +4114,16 @@
         },
         {
             "name": "laminas/laminas-mail",
-            "version": "2.21.0",
+            "version": "2.21.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laminas/laminas-mail.git",
-                "reference": "451b33522a4e7f17e097e45fceea4752c86a2ace"
+                "reference": "6e3d32a81dc28c233f4e1071564f75e151fcaca6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laminas/laminas-mail/zipball/451b33522a4e7f17e097e45fceea4752c86a2ace",
-                "reference": "451b33522a4e7f17e097e45fceea4752c86a2ace",
+                "url": "https://api.github.com/repos/laminas/laminas-mail/zipball/6e3d32a81dc28c233f4e1071564f75e151fcaca6",
+                "reference": "6e3d32a81dc28c233f4e1071564f75e151fcaca6",
                 "shasum": ""
             },
             "require": {
@@ -4187,7 +4187,7 @@
                     "type": "community_bridge"
                 }
             ],
-            "time": "2022-12-05T18:42:59+00:00"
+            "time": "2023-01-06T07:11:10+00:00"
         },
         {
             "name": "laminas/laminas-mime",
@@ -6030,16 +6030,16 @@
         },
         {
             "name": "nesbot/carbon",
-            "version": "2.64.1",
+            "version": "2.65.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "f2e59963f4c4f4fdfb9fcfd752e8d2e2b79a4e2c"
+                "reference": "09acf64155c16dc6f580f36569ae89344e9734a3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/f2e59963f4c4f4fdfb9fcfd752e8d2e2b79a4e2c",
-                "reference": "f2e59963f4c4f4fdfb9fcfd752e8d2e2b79a4e2c",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/09acf64155c16dc6f580f36569ae89344e9734a3",
+                "reference": "09acf64155c16dc6f580f36569ae89344e9734a3",
                 "shasum": ""
             },
             "require": {
@@ -6128,7 +6128,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-01-01T23:17:36+00:00"
+            "time": "2023-01-06T15:55:01+00:00"
         },
         {
             "name": "pagerfanta/pagerfanta",
@@ -8837,16 +8837,16 @@
         },
         {
             "name": "symfony/http-client-contracts",
-            "version": "v3.1.1",
+            "version": "v3.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/http-client-contracts.git",
-                "reference": "fd038f08c623ab5d22b26e9ba35afe8c79071800"
+                "reference": "c5f587eb445224ddfeb05b5ee703476742d730bf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/fd038f08c623ab5d22b26e9ba35afe8c79071800",
-                "reference": "fd038f08c623ab5d22b26e9ba35afe8c79071800",
+                "url": "https://api.github.com/repos/symfony/http-client-contracts/zipball/c5f587eb445224ddfeb05b5ee703476742d730bf",
+                "reference": "c5f587eb445224ddfeb05b5ee703476742d730bf",
                 "shasum": ""
             },
             "require": {
@@ -8858,7 +8858,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-main": "3.1-dev"
+                    "dev-main": "3.3-dev"
                 },
                 "thanks": {
                     "name": "symfony/contracts",
@@ -8898,7 +8898,7 @@
                 "standards"
             ],
             "support": {
-                "source": "https://github.com/symfony/http-client-contracts/tree/v3.1.1"
+                "source": "https://github.com/symfony/http-client-contracts/tree/v3.2.0"
             },
             "funding": [
                 {
@@ -8914,7 +8914,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-04-22T07:30:54+00:00"
+            "time": "2022-11-25T10:21:52+00:00"
         },
         {
             "name": "symfony/http-foundation",
