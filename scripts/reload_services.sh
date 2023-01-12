@@ -1,4 +1,4 @@
 #!/bin/bash
 set -euo pipefail
 
-sudo /usr/sbin/service php7.4-fpm reload
+sudo /usr/sbin/service php8.2-fpm reload

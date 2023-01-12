@@ -1,4 +1,4 @@
-image: registry.gitlab.com/portlandlabs/containers/php/7.4:latest
+image: registry.gitlab.com/portlandlabs/containers/php/8.2:latest
 
 stages:
   - test
