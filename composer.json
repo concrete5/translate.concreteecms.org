@@ -16,8 +16,8 @@
     "concrete5/community_badges_client": "dev-master",
     "concrete5/core": "dev-develop as 9.x-dev",
     "concrete5/dependency-patches": "^1.6.1",
-    "concretecms/community_translation": "dev-bedrock-1.4",
-    "concretecms/concrete_cms_theme": "dev-bedrock-1.4",
+    "concretecms/community_translation": "dev-main",
+    "concretecms/concrete_cms_theme": "dev-master",
     "mlocati/concrete5-translation-library": "^1.7.1",
     "vlucas/phpdotenv": "^2.4"
   },
