@@ -382,12 +382,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/concretecms-core.git",
-                "reference": "615d24df0b9a6cd1ffb7250108effc4743955888"
+                "reference": "e33a4cc8561e656e1af8507642dab16cfaf2bfa7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/concretecms-core/zipball/615d24df0b9a6cd1ffb7250108effc4743955888",
-                "reference": "615d24df0b9a6cd1ffb7250108effc4743955888",
+                "url": "https://api.github.com/repos/concretecms/concretecms-core/zipball/e33a4cc8561e656e1af8507642dab16cfaf2bfa7",
+                "reference": "e33a4cc8561e656e1af8507642dab16cfaf2bfa7",
                 "shasum": ""
             },
             "require": {
@@ -530,7 +530,7 @@
                 "forum": "https://forums.concretecms.org/",
                 "source": "http://documentation.concretecms.org/api/"
             },
-            "time": "2023-01-10T07:07:33+00:00"
+            "time": "2023-01-18T00:03:49+00:00"
         },
         {
             "name": "concrete5/dependency-patches",
@@ -842,12 +842,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/concrete_cms_theme.git",
-                "reference": "785c5346ed3ea3f0e1946d1d2de12e25dbcfa4c5"
+                "reference": "d7286e83ce7edf3c057f9ebe1f36f1e13c5f712d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/concrete_cms_theme/zipball/785c5346ed3ea3f0e1946d1d2de12e25dbcfa4c5",
-                "reference": "785c5346ed3ea3f0e1946d1d2de12e25dbcfa4c5",
+                "url": "https://api.github.com/repos/concretecms/concrete_cms_theme/zipball/d7286e83ce7edf3c057f9ebe1f36f1e13c5f712d",
+                "reference": "d7286e83ce7edf3c057f9ebe1f36f1e13c5f712d",
                 "shasum": ""
             },
             "default-branch": true,
@@ -861,7 +861,7 @@
                 "issues": "https://github.com/concretecms/concrete_cms_theme/issues",
                 "source": "https://github.com/concretecms/concrete_cms_theme/tree/master"
             },
-            "time": "2023-01-13T20:26:00+00:00"
+            "time": "2023-01-18T00:09:37+00:00"
         },
         {
             "name": "dapphp/securimage",
