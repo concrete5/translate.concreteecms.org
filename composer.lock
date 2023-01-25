@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7220e4c4ddf4c0a35110948c3e25f57c",
+    "content-hash": "30916c219398a7e4f0f5ea0bb6b00c5a",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -806,7 +806,7 @@
         },
         {
             "name": "concretecms/community_translation",
-            "version": "dev-main",
+            "version": "1.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/addon_community_translation.git",
@@ -822,7 +822,6 @@
                 "concrete5/core": "^9.0.3a1",
                 "php": "^7.4 || ^8"
             },
-            "default-branch": true,
             "type": "concrete5-package",
             "notification-url": "https://packagist.org/downloads/",
             "license": [
@@ -13554,7 +13553,6 @@
     "stability-flags": {
         "concrete5/community_badges_client": 20,
         "concrete5/core": 20,
-        "concretecms/community_translation": 20,
         "concretecms/concrete_cms_theme": 20
     },
     "prefer-stable": true,
