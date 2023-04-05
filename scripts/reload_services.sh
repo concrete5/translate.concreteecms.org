@@ -1,4 +1,6 @@
 #!/bin/bash
 set -euo pipefail
 
-sudo /usr/sbin/service php8.2-fpm reload
+source "/tmp/$DEPLOYMENT_ID/.cdvariables"
+
+sudo /usr/sbin/service $phpversion-fpm reload
