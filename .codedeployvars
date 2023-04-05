@@ -1,0 +1,3 @@
+projectdir=$PROJECT_DIRECTORY
+phpversion=$CONCRETE_PHP_VERSION
+jobid=$CI_JOB_ID

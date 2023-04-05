@@ -89,26 +89,22 @@ build:tar:
     - mv /builds/release.tar.gz $CI_PROJECT_DIR/release.tar.gz
 
 .job_template: &deploy
-  image: registry.gitlab.com/gitlab-org/cloud-deploy/aws-base:latest
   stage: deploy
-  before_script: []
+  before_script:
+    - apt-get update && apt-get install gettext-base
+    # Write GitLab Variables into the .codedeployvars file
+    - tar -xzf release.tar.gz ./.codedeployvars && mv .codedeployvars .codedeployvars.template
+    - envsubst < .codedeployvars.template > .codedeployvars
+    # Update appspec with environment variables
+    - tar -xzf release.tar.gz ./appspec.yml && mv appspec.yml appspec.yml.template
+    - envsubst < appspec.yml.template > appspec.yml
+    # Pack the files back into the tar
+    - gunzip release.tar.gz
+    - tar -rf release.tar ./.codedeployvars
+    - tar -rf release.tar appspec.yml
+    - gzip release.tar
   script:
-    - aws s3 cp "release.tar.gz" "s3://${BUCKET_ID}/${CI_JOB_ID}.tar.gz"
-    # Start the deployment in AWS
-    - |
-      aws deploy create-deployment \
-        --application-name "${DEPLOY_APPNAME}" \
-        --deployment-config-name CodeDeployDefault.OneAtATime \
-        --deployment-group-name "${DEPLOY_GROUP}" \
-        --description "Deploy from: ${CI_COMMIT_BRANCH} (${CI_COMMIT_SHORT_SHA}) ${CI_JOB_URL}" \
-        --s3-location "bucket=${BUCKET_ID},bundleType=tgz,key=${CI_JOB_ID}.tar.gz" > deploy.json
-    # Output deploy info
-    - cat deploy.json
-    # Wait for the deployment to complete
-    - aws deploy wait deployment-successful --deployment-id `cat deploy.json | jq ".deploymentId" -r` || true
-    # Output deploy result
-    - aws deploy get-deployment --deployment-id `cat deploy.json | jq ".deploymentId" -r` > result.json
-    - bash ./scripts/diagnose.sh `cat deploy.json | jq ".deploymentId" -r`
+    - deploy release.tar.gz
 
 deploy:stage:
   <<: *deploy

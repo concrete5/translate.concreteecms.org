@@ -2,12 +2,13 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/translate/codedeployupload
+    destination: /tmp/codedeploy/codedeployupload/${CI_JOB_ID}
 hooks:
   BeforeInstall:
     - location: scripts/before_install.sh
       timeout: 300
   AfterInstall:
+    - location: scripts/import_variables.sh
     - location: scripts/create_symlinks.sh
     - location: scripts/generate_proxies.sh
     - location: scripts/activate_release.sh
