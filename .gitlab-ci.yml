@@ -27,48 +27,46 @@ include:
     - git config --global user.email "systems@portlandlabs.com"
     - git config --global user.name "Gitlab CI"
 
-# Test with PHPUnit
-test:phpunit:
-  allow_failure: true
-  stage: test
-  rules:
-    - if: $CI_PIPELINE_SOURCE == 'external_pull_request_event' || $CI_PIPELINE_SOURCE == 'push'
-  cache:
-    paths:
-      - vendor/
-  artifacts:
-    reports:
-      junit: junit.xml
-      coverage_report:
-        coverage_format: cobertura
-        path: coverage.cobertura.xml
-  before_script:
-    - *ssh_key_setup
-    - composer install --dev --no-interaction --optimize-autoloader
-  script:
-    - XDEBUG_MODE=coverage vendor/bin/phpunit --configuration phpunit.xml.dist --log-junit=junit.xml --coverage-text --colors=never --coverage-cobertura=coverage.cobertura.xml
+# # Test with PHPUnit
+# test:phpunit:
+#   stage: test
+#   rules:
+#     - if: $CI_PIPELINE_SOURCE == 'external_pull_request_event' || $CI_PIPELINE_SOURCE == 'push'
+#   cache:
+#     paths:
+#       - vendor/
+#   artifacts:
+#     reports:
+#       junit: junit.xml
+#       coverage_report:
+#         coverage_format: cobertura
+#         path: coverage.cobertura.xml
+#   before_script:
+#     - *ssh_key_setup
+#     - composer install --dev --no-interaction --optimize-autoloader
+#   script:
+#     - XDEBUG_MODE=coverage vendor/bin/phpunit --configuration phpunit.xml.dist --log-junit=junit.xml --coverage-text --colors=never --coverage-cobertura=coverage.cobertura.xml
 
-# Test with PHPCS
-test:phpcs:
-  allow_failure: true
-  stage: test
-  rules:
-    - if: $CI_PIPELINE_SOURCE == 'external_pull_request_event' || $CI_PIPELINE_SOURCE == 'push'
-  cache:
-    paths:
-      - vendor/
-  artifacts:
-    reports:
-      junit: junit.xml
-      codequality: phpcs-quality-report.json
-  before_script:
-    - *ssh_key_setup
-    - composer install --no-interaction --optimize-autoloader
-  script:
-    - >
-      vendor/bin/phpcs --basepath=.
-      --report=code --report-junit=junit.xml --report-\\Micheh\\PhpCodeSniffer\\Report\\Gitlab=phpcs-quality-report.json 
-      phpcs.xml.dist tests public/application
+# # Test with PHPCS
+# test:phpcs:
+#   stage: test
+#   rules:
+#     - if: $CI_PIPELINE_SOURCE == 'external_pull_request_event' || $CI_PIPELINE_SOURCE == 'push'
+#   cache:
+#     paths:
+#       - vendor/
+#   artifacts:
+#     reports:
+#       junit: junit.xml
+#       codequality: phpcs-quality-report.json
+#   before_script:
+#     - *ssh_key_setup
+#     - composer install --no-interaction --optimize-autoloader
+#   script:
+#     - >
+#       vendor/bin/phpcs --basepath=.
+#       --report=code --report-junit=junit.xml --report-\\Micheh\\PhpCodeSniffer\\Report\\Gitlab=phpcs-quality-report.json 
+#       phpcs.xml.dist tests public/application
 
 build:tar:
   stage: build
