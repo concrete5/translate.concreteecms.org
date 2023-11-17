@@ -18,7 +18,7 @@
     "concrete5/dependency-patches": "^1.6.1",
     "concretecms/community_translation": "^1",
     "concretecms/concrete_cms_theme": "dev-master",
-    "mlocati/concrete5-translation-library": "^1.7.1",
+    "mlocati/concrete5-translation-library": "^1.8",
     "vlucas/phpdotenv": "^2.4"
   },
   "require-dev": {
