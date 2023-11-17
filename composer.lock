@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "30916c219398a7e4f0f5ea0bb6b00c5a",
+    "content-hash": "acdcb9a539a2b0b07fdc51a31ab05419",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -5772,16 +5772,16 @@
         },
         {
             "name": "mlocati/concrete5-translation-library",
-            "version": "1.7.1",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concrete5-community/translation-library.git",
-                "reference": "877e645dafa8c488385cfdd7c48418d98b335547"
+                "reference": "ed76ed522f6d7810d16684900d9e18fb3fa2c591"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concrete5-community/translation-library/zipball/877e645dafa8c488385cfdd7c48418d98b335547",
-                "reference": "877e645dafa8c488385cfdd7c48418d98b335547",
+                "url": "https://api.github.com/repos/concrete5-community/translation-library/zipball/ed76ed522f6d7810d16684900d9e18fb3fa2c591",
+                "reference": "ed76ed522f6d7810d16684900d9e18fb3fa2c591",
                 "shasum": ""
             },
             "require": {
@@ -5823,7 +5823,7 @@
                 "issues": "https://github.com/concrete5-community/translation-library/issues",
                 "source": "https://github.com/concrete5-community/translation-library"
             },
-            "time": "2021-11-24T10:56:58+00:00"
+            "time": "2023-11-17T17:35:51+00:00"
         },
         {
             "name": "mlocati/ip-lib",
