@@ -28,13 +28,23 @@ defined('C5_EXECUTE') or die('Access Denied.');
 $dh = app(Date::class);
 $url = app(ResolverManagerInterface::class);
 
-$coreProfileURL = null;
-try {
-    $communityAuthentication = AuthenticationType::getByHandle('community');
-    if ($communityAuthentication->isEnabled()) {
-        $coreProfileURL = $communityAuthentication->getController()->getConcreteProfileURL($profile);
+$coreProfileURL = '';
+foreach (['external_concrete', 'community'] as $authenticationTypeHandle) {
+    try {
+        $authenticationType = AuthenticationType::getByHandle($authenticationTypeHandle);
+    } catch (Throwable $x) {
+        continue;
     }
-} catch (Throwable $x) {
+    if (!$authenticationType) {
+        continue;
+    }
+    $authenticationController = $authenticationType->getController();
+    if (method_exists($authenticationController, 'getConcreteProfileURL')) {
+        $coreProfileURL = (string) $authenticationController->getConcreteProfileURL($profile);
+        if ($coreProfileURL !== '') {
+            break;
+        }
+    }
 }
 
 ?>
@@ -56,7 +66,7 @@ try {
                 <div class="ccm-profile-buttons">
                     <div class="btn-group mb-3">
                         <?php
-                        if ($coreProfileURL !== null) {
+                        if ($coreProfileURL !== '') {
                             ?>
                             <a href="<?= h($coreProfileURL) ?>" class="btn btn-lg btn-outline-secondary" target="_blank"><i class="fa-user fa"></i> <?= t('View concrete profile') ?></a>
                             <?php
