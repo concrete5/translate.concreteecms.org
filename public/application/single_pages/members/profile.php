@@ -4,7 +4,6 @@ use CommunityTranslation\Repository\Locale as LocaleRepository;
 use CommunityTranslation\Service\Access;
 use Concrete\Core\Area\Area;
 use Concrete\Core\Attribute\Key\UserKey;
-use Concrete\Core\Authentication\AuthenticationType;
 use Concrete\Core\Block\Block;
 use Concrete\Core\Database\Connection\Connection;
 use Concrete\Core\Localization\Service\Date;
@@ -27,14 +26,18 @@ defined('C5_EXECUTE') or die('Access Denied.');
 
 $dh = app(Date::class);
 $url = app(ResolverManagerInterface::class);
+$db = app(Connection::class);
 
-$coreProfileURL = null;
-try {
-    $communityAuthentication = AuthenticationType::getByHandle('community');
-    if ($communityAuthentication->isEnabled()) {
-        $coreProfileURL = $communityAuthentication->getController()->getConcreteProfileURL($profile);
+$coreProfileURL = '';
+foreach (['external_concrete', 'community'] as $authenticationType) {
+    $concreteUserID = $db->fetchOne(
+        'SELECT binding FROM OauthUserMap WHERE namespace = ? AND user_id = ? LIMIT 1',
+        [$authenticationType, $profile->getUserID()]
+    );
+    if ($concreteUserID && is_numeric($concreteUserID)) {
+        $coreProfileURL = 'https://community.concretecms.com/members/profile/' . (int) $concreteUserID;
+        break;
     }
-} catch (Throwable $x) {
 }
 
 ?>
@@ -56,7 +59,7 @@ try {
                 <div class="ccm-profile-buttons">
                     <div class="btn-group mb-3">
                         <?php
-                        if ($coreProfileURL !== null) {
+                        if ($coreProfileURL !== '') {
                             ?>
                             <a href="<?= h($coreProfileURL) ?>" class="btn btn-lg btn-outline-secondary" target="_blank"><i class="fa-user fa"></i> <?= t('View concrete profile') ?></a>
                             <?php
@@ -141,10 +144,8 @@ try {
                                 } else {
                                     ?><p><?= tc('User is...', '%1$s is %2$s.', h($profile->getUserName()), Punic\Misc::join($localeAccessList)) ?></p><?php
                                 }
-                                $db = app(Connection::class);
                                 $totalTranslations = 0;
                                 $currentTranslations = 0;
-                                /* @var Connection $db */
                                 $rs = $db->executeQuery('select count(*) as n, current from CommunityTranslationTranslations where createdBy = ? group by current', [$profile->getUserID()]);
                                 while (($row = $rs->fetch()) !== false) {
                                     if ($row['current']) {
