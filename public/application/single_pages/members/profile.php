@@ -4,6 +4,7 @@ use CommunityTranslation\Repository\Locale as LocaleRepository;
 use CommunityTranslation\Service\Access;
 use Concrete\Core\Area\Area;
 use Concrete\Core\Attribute\Key\UserKey;
+use Concrete\Core\Authentication\Type\OAuth\BindingService;
 use Concrete\Core\Block\Block;
 use Concrete\Core\Database\Connection\Connection;
 use Concrete\Core\Localization\Service\Date;
@@ -27,13 +28,11 @@ defined('C5_EXECUTE') or die('Access Denied.');
 $dh = app(Date::class);
 $url = app(ResolverManagerInterface::class);
 $db = app(Connection::class);
+$bindingService = app(BindingService::class);
 
 $coreProfileURL = '';
 foreach (['external_concrete', 'community'] as $authenticationType) {
-    $concreteUserID = $db->fetchOne(
-        'SELECT binding FROM OauthUserMap WHERE namespace = ? AND user_id = ? LIMIT 1',
-        [$authenticationType, $profile->getUserID()]
-    );
+    $concreteUserID = $bindingService->getUserBinding($profile->getUserID(), $authenticationType);
     if ($concreteUserID && is_numeric($concreteUserID)) {
         $coreProfileURL = 'https://community.concretecms.com/members/profile/' . (int) $concreteUserID;
         break;
