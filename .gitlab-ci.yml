@@ -16,6 +16,7 @@ include:
 #  - template: License-Scanning.gitlab-ci.yml
 
 .ssh_key_setup: &ssh_key_setup
+    - composer config gitlab-token.gitlab.com gitlab-ci-token ${CI_JOB_TOKEN}
     # Adding support for ssh keys in order to download packages from bitbucket.
     - 'command -v ssh-agent >/dev/null || ( apt-get update -y && apt-get install openssh-client -y )'
     - eval $(ssh-agent -s)
