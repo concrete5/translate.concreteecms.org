@@ -19,6 +19,7 @@
     "concretecms/community_translation": "^1",
     "concretecms/concrete_cms_theme": "dev-master",
     "mlocati/concrete5-translation-library": "^1.8",
+    "portlandlabs/concrete_cms_auth": "^1.0",
     "vlucas/phpdotenv": "^2.4"
   },
   "require-dev": {
