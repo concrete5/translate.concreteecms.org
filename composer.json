@@ -14,7 +14,7 @@
     "php": "^8.2",
     "composer/installers": "^1.3",
     "concrete5/community_badges_client": "dev-master",
-    "concrete5/core": "dev-develop as 9.x-dev",
+    "concrete5/core": "9.2.0",
     "concrete5/dependency-patches": "^1.6.1",
     "concretecms/community_translation": "^1",
     "concretecms/concrete_cms_theme": "dev-master",
