@@ -908,16 +908,16 @@
         },
         {
             "name": "concretecms/community_translation",
-            "version": "1.6.7",
+            "version": "1.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/concretecms/addon_community_translation.git",
-                "reference": "33f2575ce5c51d81aae3ab634e895950ad811721"
+                "reference": "044975f59368b2ffc2ada2db347c3c8f153f02a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/concretecms/addon_community_translation/zipball/33f2575ce5c51d81aae3ab634e895950ad811721",
-                "reference": "33f2575ce5c51d81aae3ab634e895950ad811721",
+                "url": "https://api.github.com/repos/concretecms/addon_community_translation/zipball/044975f59368b2ffc2ada2db347c3c8f153f02a4",
+                "reference": "044975f59368b2ffc2ada2db347c3c8f153f02a4",
                 "shasum": ""
             },
             "require": {
@@ -935,7 +935,7 @@
                 "issues": "https://github.com/concretecms/addon_community_translation/issues",
                 "source": "https://github.com/concretecms/addon_community_translation"
             },
-            "time": "2024-09-26T16:53:42+00:00"
+            "time": "2024-11-15T16:50:58+00:00"
         },
         {
             "name": "concretecms/concrete_cms_theme",
