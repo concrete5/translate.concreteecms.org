@@ -80,6 +80,9 @@ build:tar:
     - *ssh_key_setup
     # Install production dependencies
     - composer install --no-dev --no-interaction --optimize-autoloader
+    # Load in the concrete_cms_auth package
+    - git clone --branch=1.0.1 git@gitlab.com:portlandlabs/addons/concrete_cms_auth.git
+    - rm -rf public/packages/concrete_cms_auth/.git
   script:
     # Delete anything we don't want to include in the tar
     - rm -rf tests resources
