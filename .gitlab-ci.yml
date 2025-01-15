@@ -5,10 +5,6 @@ stages:
   - build
   - deploy
 
-cache:
-  paths:
-    - vendor/
-
 # Gitlab provided testing
 include:
   - template: SAST.gitlab-ci.yml
@@ -71,6 +67,13 @@ include:
 
 build:tar:
   stage: build
+  needs: []
+  cache:
+    - key:
+        files:
+          - composer.lock
+      paths:
+        - vendor/
   artifacts:
     paths:
       - release.tar.gz
@@ -80,6 +83,9 @@ build:tar:
     - *ssh_key_setup
     # Install production dependencies
     - composer install --no-dev --no-interaction --optimize-autoloader
+    # Load in the concrete_cms_auth package
+    - git clone --branch=1.0.1 https://gitlab-ci-token:${CI_JOB_TOKEN}@gitlab.com/portlandlabs/addons/concrete_cms_auth.git
+    - rm -rf public/packages/concrete_cms_auth/.git
   script:
     # Delete anything we don't want to include in the tar
     - rm -rf tests resources
@@ -89,6 +95,12 @@ build:tar:
 
 .job_template: &deploy
   stage: deploy
+  cache:
+    - key:
+        files:
+          - composer.lock
+      paths:
+        - vendor/
   before_script:
     - apt-get update && apt-get install gettext-base
     # Write GitLab Variables into the .codedeployvars file

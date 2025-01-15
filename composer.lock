@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "dcfda85983dfb007b9ee3f2d7ced939e",
+    "content-hash": "1de3fa045a061697b6700d4fa2cff2f8",
     "packages": [
         {
             "name": "anahkiasen/html-object",
@@ -6951,62 +6951,6 @@
                 }
             ],
             "time": "2022-12-17T18:26:50+00:00"
-        },
-        {
-            "name": "portlandlabs/concrete_cms_auth",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "git@gitlab.com:portlandlabs/addons/concrete_cms_auth.git",
-                "reference": "e3aa84c7abd18b2d304e7e47580a250372fc09fe"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://gitlab.com/api/v4/projects/portlandlabs%2Faddons%2Fconcrete_cms_auth/repository/archive.zip?sha=e3aa84c7abd18b2d304e7e47580a250372fc09fe",
-                "reference": "e3aa84c7abd18b2d304e7e47580a250372fc09fe",
-                "shasum": ""
-            },
-            "require": {
-                "aws/aws-sdk-php": "^1|^2|^3",
-                "ext-openssl": "*",
-                "league/uri-components": "^2|^7"
-            },
-            "require-dev": {
-                "concrete5/core": "^9",
-                "laravel/pint": "^1.17",
-                "mockery/mockery": "^1.6",
-                "pestphp/pest": "^1.23"
-            },
-            "type": "concrete5-package",
-            "autoload": {
-                "psr-4": {
-                    "PortlandLabs\\CommunityAuth\\": "src"
-                },
-                "files": [
-                    "src/helpers.php"
-                ]
-            },
-            "scripts": {
-                "lint": [
-                    "pint"
-                ],
-                "test:lint": [
-                    "@lint -- --test"
-                ],
-                "test:unit": [
-                    "pest"
-                ],
-                "test": [
-                    "@test:lint",
-                    "@test:unit"
-                ]
-            },
-            "description": "Concrete community authentication package",
-            "support": {
-                "source": "https://gitlab.com/portlandlabs/addons/concrete_cms_auth/-/tree/1.0.1",
-                "issues": "https://gitlab.com/portlandlabs/addons/concrete_cms_auth/-/issues"
-            },
-            "time": "2024-08-30T02:02:59+00:00"
         },
         {
             "name": "predis/predis",
@@ -14014,7 +13958,8 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^8.2"
+        "php": "^8.2",
+        "ext-openssl": "*"
     },
     "platform-dev": {},
     "plugin-api-version": "2.6.0"
